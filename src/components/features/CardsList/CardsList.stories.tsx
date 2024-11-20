@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { CardsList } from "./CardsList";
 import { Bordered as BorderedCard } from "@/components/ui/Card/Card.stories";
+import { CardMockLongContent } from "@/shared/mocks/Card.mocks";
 
 const meta = {
   title: "Features/CardsList",
@@ -9,6 +10,13 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
+  decorators: [
+    (Story) => (
+      <div style={{ maxWidth: "400px", margin: "0 auto" }}>
+        <Story />
+      </div>
+    ),
+  ],
 } satisfies Meta<typeof CardsList>;
 
 export default meta;
@@ -25,6 +33,7 @@ export const With3Cards: Story = {
       },
       {
         ...BorderedCard.args,
+        ...CardMockLongContent,
       },
     ],
   },
