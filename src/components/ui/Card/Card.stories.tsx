@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Card } from "./Card";
-import { CardMock } from "@/shared/mocks/Card.mocks";
+import { CardMock, CardMockLongContent } from "@/shared/mocks/Card.mocks";
 
 const meta = {
   title: "UI/Card",
@@ -33,6 +33,14 @@ export const Shadow: Story = {
 export const Bordered: Story = {
   args: {
     ...CardMock,
+    variant: "bordered",
+  },
+};
+
+export const BorderedLongContent: Story = {
+  args: {
+    ...CardMock,
+    ...CardMockLongContent,
     variant: "bordered",
   },
 };
