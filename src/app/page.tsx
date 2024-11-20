@@ -1,6 +1,6 @@
-import { CardMock } from "@/components/ui/Card/Card.mocks";
 import { CardProps } from "@/components/ui/Card/Card";
 import { FrontPage } from "../components/pages/FrontPage/FrontPage";
+import { CardMock } from "@/shared/mocks/Card.mocks";
 
 export default function Home() {
   const cards: CardProps[] = Array.from({ length: 3 }, () => {

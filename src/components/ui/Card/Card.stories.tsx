@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Card } from "./Card";
-import { CardMock } from "./Card.mocks";
+import { CardMock } from "@/shared/mocks/Card.mocks";
 
 const meta = {
   title: "UI/Card",
