@@ -41,6 +41,11 @@ src/
 └── storybook/ # Storybook configuration and examples
 ```
 
+## Deployment
+
+- You can deploy your Storybook with Chromatic
+- [Deploy Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/deploy/)
+
 ## Documentation
 
 - [Next.js Documentation](https://nextjs.org/docs)
