@@ -36,8 +36,8 @@ src/
 │   ├── pages/ # Page-level components
 │   └── ui/ # Reusable UI components
 ├── shared/ # Shared utilities and types
-│   ├── mocks/ # Mock data for testing and development
-│   └── types/ # TypeScript type definitions
+│   ├── interfaces/ #  TypeScript interface definitions
+│   └── mocks/ # Mock data for testing and development
 └── storybook/ # Storybook configuration and examples
 ```
 
