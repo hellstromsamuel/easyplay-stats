@@ -45,6 +45,11 @@ src/
 
 - You can deploy your Storybook with Chromatic
 - [Deploy Storybook](https://storybook.js.org/tutorials/intro-to-storybook/react/en/deploy/)
+- Deploy Storybook project to Chromatic
+
+```bash
+npx chromatic --project-token=[PROJECT_TOKEN]
+```
 
 ## Documentation
 
