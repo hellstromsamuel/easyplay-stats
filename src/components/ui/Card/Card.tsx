@@ -2,10 +2,9 @@ import React from "react";
 
 import "./Card.scss";
 import classNames from "classnames";
+import { ICard } from "@/shared/interfaces/ICard";
 
-export interface CardProps {
-  title: string;
-  content: string;
+export interface CardProps extends ICard {
   variant?: "unstyled" | "shadow" | "bordered";
   backgroundColor?: string;
 }
