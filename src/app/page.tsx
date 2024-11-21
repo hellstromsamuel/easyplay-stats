@@ -10,10 +10,8 @@ export default function Home() {
     };
   });
   return (
-    <div>
-      <main>
-        <FrontPage pageTitle="Test title" cards={cards} />
-      </main>
-    </div>
+    <main>
+      <FrontPage pageTitle="Test title" cards={cards} />
+    </main>
   );
 }
