@@ -7,22 +7,26 @@ import SearchInput from "../SearchInput/SearchInput";
 
 interface Props {
   cards: ICollectionStat[];
+  endpoint: string;
 }
 
-function SearchAndCards({ cards }: Props) {
+function SearchAndCards({ cards, endpoint }: Props) {
   const [search, setSearch] = useState("");
 
   const filteredCards = useMemo(() => {
     if (!search) return cards;
-    return cards.filter((card) => card.title.includes(search));
+    return cards.filter((card) =>
+      card.title.toLowerCase().includes(search.toLowerCase())
+    );
   }, [search, cards]);
 
   return (
-    <div className="p-6 md:p-8 flex flex-col items-center gap-6 md:gap-8">
-      <SearchInput value={search} setValue={setSearch} />
-      {filteredCards.length === 0 && (
-        <p className="py-4 text-xl">Fant ingen stats med tittel '{search}'</p>
-      )}
+    <div className="mt-20 p-6 md:p-8 flex flex-col items-center gap-6 md:gap-8 w-full mx-auto max-w-7xl">
+      <div className="grid gap-4 w-full">
+        <p className="w-full text-left px-4">{endpoint}</p>
+        <SearchInput value={search} setValue={setSearch} />
+      </div>
+      {filteredCards.length === 0 && <p>Ikke funnet</p>}
       <CardsGrid cards={filteredCards} />
     </div>
   );

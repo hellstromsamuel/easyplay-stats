@@ -9,7 +9,7 @@ export async function getStatsFromApi(): Promise<ICollectionStat[]> {
       throw new Error("Missing API base URL or authentication token");
     }
 
-    const response = await fetch("https://localhost:8080/stats", {
+    const response = await fetch(baseUrl + "/stats", {
       method: "GET",
       headers: {
         Authorization: `Bearer ${authToken}`,
