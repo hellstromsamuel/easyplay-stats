@@ -1,17 +1,13 @@
-import { CardProps } from "@/components/ui/Card/Card";
-import { FrontPage } from "../components/pages/FrontPage/FrontPage";
-import { CardMock } from "@/shared/mocks/Card.mocks";
+import Header from "@/components/Header/Header";
+import SearchAndCards from "@/components/SearchAndCards/SearchAndCards";
+import { CardMocks } from "@/shared/mocks/Card.mocks";
 
 export default function Home() {
-  const cards: CardProps[] = Array.from({ length: 3 }, () => {
-    return {
-      ...CardMock,
-      variant: "bordered",
-    };
-  });
+  const cards = CardMocks;
   return (
-    <main>
-      <FrontPage pageTitle="Test title" cards={cards} />
+    <main className="min-w-screen min-h-screen pt-24 flex flex-col justify-center">
+      <Header />
+      <SearchAndCards cards={cards} />
     </main>
   );
 }

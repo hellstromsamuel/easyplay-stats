@@ -9,9 +9,8 @@ const nunitoSans = Nunito_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Next.js Storybook template",
-  description:
-    "This is a template for a Next.js App Router project with Storybook",
+  title: "EasyPlay - Stats",
+  description: "EasyPlay - Overview of stats in our platform",
 };
 
 export default function RootLayout({

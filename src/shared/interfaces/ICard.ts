@@ -1,4 +1,5 @@
 export interface ICard {
+  stat: number;
   title: string;
-  content: string;
+  value: string;
 }
