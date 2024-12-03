@@ -2,6 +2,8 @@ import { getStatsFromApi } from "@/api/getStatsFromApi";
 import Header from "@/components/Header/Header";
 import SearchAndCards from "@/components/SearchAndCards/SearchAndCards";
 
+export const fetchCache = "force-no-store";
+
 export default async function Home() {
   const stats = await getStatsFromApi();
 
