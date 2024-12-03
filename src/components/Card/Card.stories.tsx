@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Card } from "./Card";
-import { CardMock, CardMockLongContent } from "@/shared/mocks/Card.mocks";
+import { CardMock1 } from "@/shared/mocks/Card.mocks";
 
 const meta = {
   title: "UI/Card",
@@ -9,45 +9,13 @@ const meta = {
     layout: "centered",
   },
   tags: ["autodocs"],
-  argTypes: {
-    backgroundColor: { control: "color" },
-  },
 } satisfies Meta<typeof Card>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Unstyled: Story = {
+export const Default: Story = {
   args: {
-    ...CardMock,
-  },
-};
-
-export const Shadow: Story = {
-  args: {
-    ...CardMock,
-    variant: "shadow",
-  },
-};
-
-export const Bordered: Story = {
-  args: {
-    ...CardMock,
-    variant: "bordered",
-  },
-};
-
-export const BorderedLongContent: Story = {
-  args: {
-    ...CardMock,
-    ...CardMockLongContent,
-    variant: "bordered",
-  },
-};
-
-export const CustomBackgroundColor: Story = {
-  args: {
-    ...CardMock,
-    backgroundColor: "lightgray",
+    ...CardMock1,
   },
 };
