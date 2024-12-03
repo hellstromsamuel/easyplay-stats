@@ -15,7 +15,7 @@ function SearchAndCards({ cards }: Props) {
   const filteredCards = useMemo(() => {
     if (!search) return cards;
     return cards.filter((card) => card.title.includes(search));
-  }, [search]);
+  }, [search, cards]);
 
   return (
     <div className="p-6 md:p-8 flex flex-col items-center gap-6 md:gap-8">
