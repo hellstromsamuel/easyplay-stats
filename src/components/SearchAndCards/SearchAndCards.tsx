@@ -1,12 +1,12 @@
 "use client";
 
-import { ICard } from "@/shared/interfaces/ICard";
+import { ICollectionStat } from "@/shared/interfaces/ICollectionStat";
 import { CardsGrid } from "../CardsGrid/CardsGrid";
 import { useMemo, useState } from "react";
 import SearchInput from "../SearchInput/SearchInput";
 
 interface Props {
-  cards: ICard[];
+  cards: ICollectionStat[];
 }
 
 function SearchAndCards({ cards }: Props) {
