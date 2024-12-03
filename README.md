@@ -1,6 +1,6 @@
-# Next.js Storybook template
+# EasyPlay Stats - Next.js App Router, Storybook
 
-This is a template for a Next.js App Router project with Storybook
+EasyPlay - Overview of stats in our platform
 
 ## Setup
 
